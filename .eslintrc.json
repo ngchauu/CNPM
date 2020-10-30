@@ -1,0 +1,24 @@
+{
+    "extends": ["airbnb","prettier"],
+    "parser": "babel-eslint",
+    "plugins": ["prettier"],
+    "rules": {
+      /* JSX */
+      "react/prop-types": [1, {
+        "ignore": ["className", "children", "location", "params", "location*"]
+      }],
+      "no-param-reassign": [1, {
+        "props": true
+      }],
+      "prefer-rest-params": 1,
+      "arrow-body-style": 1,
+      "prefer-template": 1,
+      "react/prefer-stateless-function": 1,
+      "react/jsx-no-bind": [1, {
+        "ignoreRefs": true,
+        "allowArrowFunctions": true,
+        "allowBind": true
+      }],
+      "prettier/prettier": ["error"]
+    }
+  }
